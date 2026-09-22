@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Life</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <!-- DESKTOP SIDEBAR -->
+  <nav class="sidebar" id="sidebar">
+    <div class="brand">☁ My Life</div>
+    <button class="nav-item" data-view="home">⌂&nbsp;&nbsp;Home</button>
+    <button class="nav-item" data-view="write">✎&nbsp;&nbsp;Write</button>
+    <button class="nav-item" data-view="calendar">▢&nbsp;&nbsp;Calendar</button>
+    <button class="nav-item" data-view="journal">📖&nbsp;&nbsp;Journal</button>
+    <button class="nav-item" data-view="tasks">✓&nbsp;&nbsp;Tasks</button>
+    <button class="nav-item" data-view="money">◌&nbsp;&nbsp;Money</button>
+    <button class="nav-item" data-view="explore">⌁&nbsp;&nbsp;Explore</button>
+    <div class="nav-divider"></div>
+    <button class="nav-item" data-view="search">⌕&nbsp;&nbsp;Search</button>
+    <div class="sidebar-footer">
+      <div class="nav-divider"></div>
+      <button class="nav-item" data-view="settings">⚙&nbsp;&nbsp;Settings</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE TOPBAR -->
+  <div class="topbar">
+    <button class="icon-btn" id="drawerBtn" aria-label="Menu">☰</button>
+    <div class="brand">☁ My Life</div>
+    <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+  </div>
+
+  <main id="main">
+    <!-- ===================== HOME ===================== -->
+    <section class="view" id="view-home"></section>
+
+    <!-- ===================== WRITE ===================== -->
+    <section class="view" id="view-write"></section>
+
+    <!-- ===================== CALENDAR ===================== -->
+    <section class="view" id="view-calendar"></section>
+
+    <!-- ===================== JOURNAL ===================== -->
+    <section class="view" id="view-journal"></section>
+
+    <!-- ===================== TASKS ===================== -->
+    <section class="view" id="view-tasks"></section>
+
+    <!-- ===================== MONEY ===================== -->
+    <section class="view" id="view-money"></section>
+
+    <!-- ===================== EXPLORE ===================== -->
+    <section class="view" id="view-explore"></section>
+
+    <!-- ===================== SETTINGS ===================== -->
+    <section class="view" id="view-settings"></section>
+  </main>
+
+  <!-- BOTTOM NAV (mobile) -->
+  <nav class="bottom-nav">
+    <div class="bottom-nav-inner">
+      <button class="bnav-item" data-view="write"><span>✎</span>Write</button>
+      <button class="bnav-item" data-view="calendar"><span>▢</span>Calendar</button>
+      <button class="bnav-item" data-view="tasks"><span>✓</span>Tasks</button>
+      <button class="bnav-item" data-view="money"><span>◌</span>Money</button>
+    </div>
+  </nav>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toastRoot"></div>
+<div id="searchRoot"></div>
+<div id="drawerRoot"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
